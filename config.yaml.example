@@ -1,0 +1,19 @@
+# Sample configuration file
+general:
+  timeout: 10  # Timeout in seconds
+# headers:     # Common headers
+#   User-Agent: "restval-compare/1.0"
+#   Accept: "application/json"
+
+# Endpoint configuration
+endpoint1:
+  url: "https://jsonplaceholder.typicode.com/todos"
+# headers:
+#   Authorization: "Bearer TOKEN1"
+  jsonpath: "$[*].title"
+
+endpoint2:
+  url: "https://jsonplaceholder.typicode.com/todos"
+# headers:
+#   X-API-Key: "API_KEY2"
+  jsonpath: "$[*].title"
